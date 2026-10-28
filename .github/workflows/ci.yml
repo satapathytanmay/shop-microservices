@@ -1,0 +1,15 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        service: [orders, users, payments, notifications]
+    uses: ./.github/workflows/reusable-build.yml
+    with:
+      service: ${{ matrix.service }}
