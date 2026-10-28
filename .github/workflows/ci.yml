@@ -13,3 +13,4 @@ jobs:
     uses: ./.github/workflows/reusable-build.yml
     with:
       service: ${{ matrix.service }}
+    secrets: inherit
