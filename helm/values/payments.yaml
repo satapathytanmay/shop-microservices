@@ -1,0 +1,4 @@
+replicaCount: 4
+image:
+  repository: tanmaydocker2/shop-payments
+  tag: 7e7ab13c22b1e405848304ad2930b86295c36b39
